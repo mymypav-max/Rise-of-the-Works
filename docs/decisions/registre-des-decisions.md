@@ -179,6 +179,18 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — épuration du jus**
+- Pour le bilan matière simplifié de la V1, l'épuration entraîne une perte de référence de 1 kg de saccharose par tonne de betteraves propres traitées.
+- Cette perte est considérée comme entraînée avec les boues d'épuration.
+- La production de boues humides est représentée par une valeur de référence arrondie d'environ 90 kg par tonne de betteraves propres.
+- Ces valeurs sont des simplifications de gameplay fondées sur des ordres de grandeur documentés ; elles ne prétendent pas représenter une constante universelle des sucreries.
+
+**Décision validée — teneur en sucre de la matière première et jus brut**
+- Le modèle conserve une base de 1 000 kg de betteraves propres donnant 1 150 kg de jus brut de diffusion.
+- Ce jus brut est simplifié à 15 % de saccharose en masse, soit 172,5 kg de saccharose.
+- Cette teneur correspond à une matière première particulièrement riche en sucre, située dans le haut des ordres de grandeur observés. Elle est néanmoins conservée volontairement comme référence de base du jeu.
+- Après la perte de référence de 1 kg à l'épuration, le jus épuré contient 171,5 kg de saccharose.
+
 **Décision validée — organisation de la diffusion**
 - L'atelier de diffusion comprend également le pressage des pulpes en fin de diffusion.
 - Les pulpes qui sortent de l'atelier de diffusion pour être stockées sont donc des pulpes pressées, et non les pulpes fraîches directement à la sortie du diffuseur.
