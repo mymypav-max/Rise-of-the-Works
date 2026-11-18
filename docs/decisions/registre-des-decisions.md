@@ -1,40 +1,615 @@
-# Registre des décisions de conception
+# Référentiel unique des décisions de conception — Rise of the Works
 
-Ce document distingue les orientations validées des sujets encore ouverts. Une décision pourra évoluer, mais toute modification importante devra être explicitée.
+> **Document de référence vivant — phase de conception**
+>
+> Ce document est la source unique de vérité pour les décisions de conception de Rise of the Works. Il rassemble les décisions validées, les principes retenus dont certains paramètres restent à définir, les hypothèses de travail et les questions encore ouvertes.
+>
+> Pendant la phase actuelle, toute évolution de la conception doit être vérifiée par rapport à ce document et intégrée ici. Aucun document parallèle de décisions ne doit être créé ou maintenu. Les autres documents de conception déjà présents dans le dépôt sont des supports initiaux et ne prévalent pas sur le présent référentiel.
+>
+> Le cahier des charges détaillé ne sera rédigé qu'après la clôture de cette phase : lorsque la liste des éléments à concevoir sera suffisamment détaillée, cohérente et débarrassée de ses contradictions.
 
-## Décisions validées
+---
 
-| ID | Sujet | Décision |
+## 1. Règles de lecture et de mise à jour
+
+### 1.1 Statuts
+
+- **Validé** : décision explicitement retenue.
+- **Principe validé — paramètres à définir** : l'orientation est retenue, mais les valeurs, modalités ou détails restent à déterminer.
+- **Hypothèse de travail** : piste proposée pour avancer, qui ne doit pas être considérée comme une décision.
+- **Ouvert** : aucune décision n'a encore été prise.
+- **Remplacé** : ancienne formulation abandonnée au profit d'une décision plus récente. Elle est conservée dans l'historique pour assurer la traçabilité.
+
+### 1.2 Règles de gouvernance
+
+1. Toute nouvelle décision doit être comparée aux décisions déjà consignées.
+2. En cas de contradiction, le conflit doit être présenté explicitement avant de modifier le référentiel.
+3. Une décision remplacée n'est jamais effacée sans trace : le changement et sa raison sont consignés.
+4. Les valeurs industrielles, économiques ou temporelles ne doivent pas être inventées et présentées comme réalistes. Elles devront être documentées, puis adaptées au gameplay.
+5. Une proposition de l'assistant n'est pas une décision tant qu'elle n'a pas été acceptée explicitement.
+6. Le présent document reste le seul document de référence des décisions pendant cette phase. Il sera enrichi au fil des échanges.
+
+### 1.3 Historique du document
+
+| Version | Date | Évolution |
 |---|---|---|
-| D-001 | Nom du projet | Rise of the Works |
-| D-002 | Concept | Jeu solo de gestion et de développement industriel |
-| D-003 | Première industrie | Sucrerie betteravière |
-| D-004 | Évolutivité | Le concept doit pouvoir accueillir d'autres industries ultérieurement |
-| D-005 | Plateforme V1 | PC Windows 10/11 |
-| D-006 | Mode de jeu | Solo, hors ligne, sauvegardes locales |
-| D-007 | Vue | 2D isométrique |
-| D-008 | Construction | Emplacements prédéfinis |
-| D-009 | Temps | Temps réel accéléré avec pause ; vitesses à définir |
-| D-010 | Approvisionnement initial | Achat de betteraves auprès d'agriculteurs externes |
-| D-011 | Approvisionnement futur | Possibilité d'acquérir des terres et de produire ses propres betteraves |
-| D-012 | Personnel | Personnel permanent toute l'année |
-| D-013 | Maintenance | Équipe centralisée de techniciens |
-| D-014 | Mini-jeux prioritaires | Dépannage hydraulique et gestion des flux |
-| D-015 | Supervision | Tableau de bord centralisé avec onglets secondaires |
-| D-016 | Priorité de conception | Le gameplay prime sur la simulation technique exhaustive |
+| 0.1 | 18/11/2026 | Consolidation des décisions issues de la phase initiale de conception et des échanges sur la sucrerie betteravière, ses infrastructures, ses stockages et son approvisionnement. |
 
-## Sujets ouverts
+---
 
-- Confirmer le moteur de jeu et le langage.
-- Définir l'échelle du temps et la durée des campagnes.
-- Déterminer les ateliers et infrastructures annexes de la V1.
-- Établir des capacités et cadences cohérentes et documentées.
-- Définir les règles de calcul des flux et des stocks intermédiaires.
-- Définir le modèle économique et les contrats.
-- Détailler les niveaux d'amélioration des ateliers.
-- Définir la direction artistique et le pipeline des ressources.
-- Définir l'architecture des sauvegardes.
+## 2. Vision et identité du jeu
 
-## Règle de mise à jour
+### 2.1 Concept général
 
-Toute nouvelle décision structurante doit être ajoutée à ce registre avec un identifiant, un sujet et une formulation non ambiguë. Les décisions remplacées doivent être signalées plutôt que supprimées silencieusement.
+**Validé**
+
+Rise of the Works est un jeu solo de gestion et de développement industriel. Le joueur construit, organise et fait évoluer un site de production afin d'assurer son fonctionnement, d'améliorer ses performances et de développer sa rentabilité.
+
+La première industrie jouable est une sucrerie betteravière. Le concept général doit pouvoir accueillir d'autres secteurs industriels dans de futures évolutions, sans élargir artificiellement le périmètre de la première expérience.
+
+Le jeu doit associer :
+- une gestion économique et entrepreneuriale ;
+- la construction et l'agrandissement visibles du site ;
+- l'organisation d'une chaîne de production ;
+- l'optimisation des capacités et des ressources ;
+- la gestion du personnel, des approvisionnements, des incidents et des investissements.
+
+Le jeu doit rester agréable et accessible. Il ne s'agit pas d'un simulateur d'ingénierie exhaustive : le procédé industriel est simplifié, mais doit conserver une logique crédible.
+
+### 2.2 Principes directeurs
+
+**Validé**
+
+- Le gameplay prime sur la simulation technique exhaustive.
+- Le joueur doit voir son usine grandir et évoluer visuellement.
+- Les ateliers et infrastructures sont interdépendants.
+- Les capacités et les ressources disponibles créent des goulets d'étranglement.
+- Les investissements doivent être réfléchis : augmenter la capacité d'un atelier peut être inutile si une autre installation limite la production.
+- Les systèmes de gestion doivent rester lisibles et ne pas devenir inutilement complexes.
+
+### 2.3 Plateforme et mode de jeu
+
+**Validé**
+- Jeu solo.
+- Fonctionnement hors ligne.
+- Sauvegardes locales.
+- Cible initiale : PC Windows 10/11.
+- Utilisation au clavier et à la souris.
+- Distribution envisagée sous forme d'un programme Windows installable (.exe), sans dépendance initiale à Steam.
+
+**Ouvert**
+- Modalités précises de distribution et de mise à jour du jeu.
+
+### 2.4 Représentation et construction
+
+**Validé**
+- Graphismes 2D isométriques pour la première version.
+- Vue générale du site permettant d'observer les bâtiments et leur évolution.
+- Les bâtiments sont construits sur des emplacements prédéfinis ; pas de placement entièrement libre.
+- Les ateliers de production sont des bâtiments distincts.
+- Le joueur doit pouvoir construire de nouveaux bâtiments ou augmenter certaines capacités au fil de sa progression.
+
+**Validé — contrainte de production des ressources graphiques**
+- Le joueur ne souhaite pas devoir apprendre un logiciel de dessin ou réaliser manuellement les cartes du jeu.
+- La création du moteur et l'intégration des ressources seront prises en charge dans le développement, notamment avec Claude Code.
+- Les ressources graphiques pourront provenir de bibliothèques libres ou d'images générées par IA, en veillant à conserver une cohérence visuelle.
+
+**Ouvert**
+- Direction artistique définitive, style des bâtiments, interface graphique et méthode précise de production des sprites.
+- Résolution et comportement détaillé de l'interface.
+
+---
+
+## 3. Organisation temporelle et campagnes
+
+### 3.1 Fonctionnement du temps
+
+**Validé**
+- Le jeu fonctionne en temps réel accéléré.
+- Le joueur peut mettre le jeu en pause et choisir plusieurs vitesses d'écoulement du temps.
+
+**Principe validé — paramètres à définir**
+- Les rythmes de jeu doivent permettre de suivre l'activité industrielle sans donner l'impression que les journées défilent trop vite.
+- La durée d'une journée réelle de jeu, les vitesses proposées et l'éventuelle différence de rythme entre campagne et intercampagne restent à définir.
+- Les vitesses x1, x2 et x4 ont été évoquées comme piste, sans validation définitive.
+
+### 3.2 Campagnes betteravières
+
+**Validé**
+- L'activité sucrière est organisée en campagnes saisonnières.
+- Une période d'intercampagne suit la campagne.
+- L'intercampagne sert notamment à effectuer la maintenance, les travaux, les améliorations et les investissements.
+- Le personnel permanent reste employé et rémunéré toute l'année, y compris pendant l'intercampagne.
+
+**Ouvert**
+- Durée d'une campagne et d'une intercampagne.
+- Calendrier exact et correspondance entre temps de jeu et durée simulée.
+- Éventuelles variations de cadence ou de règles entre campagne et intercampagne.
+
+---
+
+## 4. Site industriel et progression
+
+### 4.1 Démarrage
+
+**Validé**
+- Le joueur commence sur un terrain vierge.
+- Le budget initial doit permettre de construire les installations minimales nécessaires au lancement d'une première production.
+- La progression passe par la construction, l'amélioration et le déblocage de nouvelles installations.
+
+### 4.2 Ateliers et bâtiments
+
+**Validé**
+- Les ateliers de production sont des bâtiments distincts.
+- Les ateliers peuvent disposer de niveaux d'amélioration.
+- Le joueur peut construire des ateliers supplémentaires lorsque la progression et les besoins de production le justifient.
+- Les niveaux, coûts et effets des améliorations restent à définir.
+
+**Principe validé — paramètres à définir**
+- Les bâtiments et ateliers possèdent des capacités propres.
+- Les capacités des infrastructures annexes peuvent limiter les ateliers de production.
+- Les capacités supplémentaires doivent avoir un coût de construction et des coûts d'exploitation cohérents.
+
+---
+
+## 5. Procédé de production du sucre
+
+### 5.1 Chaîne principale de départ
+
+**Principe validé — organisation retenue**
+
+La chaîne de base comprend neuf ateliers de production distincts :
+
+1. **Réception des betteraves** : réception, déchargement et alimentation de la chaîne.
+2. **Lavage et déterrage** : retrait de la terre, des pierres et des matières indésirables.
+3. **Découpage** : transformation des betteraves en cossettes.
+4. **Diffusion** : extraction du sucre contenu dans les cossettes. Cette étape génère également des pulpes humides.
+5. **Épuration** : traitement du jus, notamment par chaulage, carbonatation et filtration.
+6. **Évaporation** : concentration du jus par retrait d'une partie de l'eau.
+7. **Cristallisation** : formation des cristaux de sucre.
+8. **Centrifugation** : séparation des cristaux et du sirop restant.
+9. **Séchage et refroidissement** : préparation du sucre cristallisé destiné au stockage en vrac.
+
+Chaque atelier est représenté par un bâtiment distinct.
+
+**Précision de périmètre**
+- Le produit de base est le sucre cristallisé en vrac.
+- Le sucre vrac peut être stocké et vendu directement, sans devoir passer par une fabrication de sucre en morceaux.
+- Le conditionnement en sacs ou en petits emballages n'est pas retenu comme une étape obligatoire de la chaîne de base à ce stade.
+
+### 5.2 Capacités et flux
+
+**Principe validé — paramètres à définir**
+- Chaque atelier possède une capacité nominale.
+- La production réelle dépend de la capacité disponible, des matières entrantes, des ressources, du personnel et de la disponibilité des ateliers en amont et en aval.
+- Les ateliers n'ont pas nécessairement les mêmes cadences.
+- Les différences de capacité doivent créer des arbitrages et des goulets d'étranglement compréhensibles.
+- Les stocks intermédiaires absorbent temporairement les différences de cadence.
+- Une saturation ou un arrêt peut réduire le débit de toute la chaîne.
+- Les investissements doivent être évalués à l'échelle de la chaîne complète.
+
+**Ouvert**
+- Capacités nominales et cadences de chacun des neuf ateliers.
+- Rendements matière et taux de pertes.
+- Volumes et règles de gestion des stocks intermédiaires.
+- Consommations de vapeur, d'électricité, d'eau et de consommables.
+- Valeurs industrielles de référence et adaptations nécessaires au gameplay.
+
+Aucune valeur chiffrée de capacité, de rendement ou de consommation n'est validée à ce stade.
+
+---
+
+## 6. Coproduits et extensions industrielles
+
+### 6.1 Pulpes humides et pellets
+
+**Validé — principe de filière**
+
+- La diffusion produit des pulpes humides.
+- Les pulpes humides sont stockées dans des silos dédiés avant leur traitement ou leur évacuation.
+- Une durée maximale de conservation doit être appliquée afin d'empêcher un stockage indéfini.
+- La durée d'un an a été proposée comme première hypothèse, mais n'est pas une valeur validée.
+- Avant le déblocage de la déshydratation, le joueur doit supporter un coût pour faire évacuer les pulpes.
+- Au cours de la progression, le joueur pourra investir dans un atelier de déshydratation, également appelé bâtiment de déshydratation.
+- Cet atelier transforme les pulpes humides en pellets.
+- Les pellets sont un véritable produit commercialisable, générateur de revenus.
+- Les pellets finis disposent de silos de stockage distincts des silos à pulpes humides.
+- La capacité de stockage des pulpes doit être cohérente avec le débit de production et la capacité de déshydratation.
+
+**Principe validé — paramètres à définir**
+- Les silos à pulpes humides sont des bâtiments indépendants et constructibles séparément.
+- Plusieurs capacités de stockage pourront être proposées.
+- La qualité ou l'utilisabilité des pulpes doit se dégrader lorsque la durée de conservation est dépassée ; les modalités exactes restent à définir.
+- La saturation des silos doit contraindre la production ou imposer une solution d'évacuation.
+- L'atelier de déshydratation, ses besoins énergétiques, ses capacités et les coûts de traitement restent à définir.
+
+### 6.2 Sucre en morceaux
+
+**Validé — principe de filière**
+- Le sucre en morceaux n'est pas disponible au démarrage.
+- Le joueur pourra investir ultérieurement dans un atelier dédié à la fabrication de sucre en morceaux.
+- Le sucre cristallisé de base reste vendable directement en vrac.
+- Le sucre en morceaux dispose d'un stockage dédié, distinct des silos à sucre vrac.
+
+**Ouvert**
+- Procédé simplifié de fabrication.
+- Capacité, coût, besoins en personnel et ressources.
+- Conditions de déblocage et intérêt commercial.
+- Modalités de stockage détaillées.
+
+### 6.3 Autres coproduits
+
+**Ouvert**
+- La mélasse et les écumes sont identifiées comme coproduits possibles du procédé.
+- Leur stockage, leur évacuation ou leur valorisation économique ne sont pas encore décidés.
+- Ne pas leur attribuer de filière ou de revenu avant décision explicite.
+
+---
+
+## 7. Approvisionnement et réception des betteraves
+
+### 7.1 Fournisseurs et contrats
+
+**Validé**
+- Au démarrage, les betteraves sont achetées auprès d'agriculteurs externes.
+- Le joueur peut conclure des contrats d'approvisionnement sur plusieurs campagnes.
+- Les livraisons contractuelles sont planifiées et automatiques.
+- Le joueur peut également commander ponctuellement des camions supplémentaires en fonction de ses besoins.
+- Les achats ponctuels peuvent être plus coûteux que les volumes contractuels : cette différence est un principe retenu, mais son niveau reste à définir.
+
+**Progression ultérieure validée**
+- Le joueur pourra acquérir des terres et produire une partie de ses propres betteraves.
+- Il devra alors arbitrer entre production interne et achats externes.
+
+### 7.2 Camions et réception
+
+**Validé**
+- Tous les camions sont considérés comme ayant une capacité de chargement identique.
+- Le jeu n'a pas besoin de simuler le pesage individuel des camions.
+- Le pont-bascule et la pesée à réception ne sont donc pas nécessaires au gameplay retenu.
+- Les camions déchargent les betteraves dans les installations de réception.
+- Une aire extérieure permet de stocker les betteraves avant leur alimentation vers le lavage.
+
+### 7.3 Stockage des betteraves et limites logistiques
+
+**Principe validé — paramètres à définir**
+- L'aire de stockage possède une capacité maximale.
+- Sa capacité peut être augmentée par investissement.
+- Le joueur doit équilibrer le rythme des livraisons, la capacité de stockage et le débit de transformation.
+- La saturation de l'aire doit avoir une conséquence sur les livraisons et la production.
+
+**Ouvert**
+- Gestion précise des camions lorsque l'aire est pleine : report, refus, attente ou autre mécanisme.
+- Éventuelles pénalités contractuelles en cas de livraison impossible.
+- Capacité unitaire d'un camion et capacité initiale de l'aire.
+- Règles de conservation des betteraves et éventuelle dégradation de leur qualité.
+
+---
+
+## 8. Infrastructures annexes et utilités
+
+Les infrastructures annexes ne sont pas des ateliers de transformation directe des betteraves. Elles fournissent les ressources ou services nécessaires au fonctionnement de l'usine. Elles possèdent leurs propres capacités et peuvent devenir des goulets d'étranglement.
+
+### 8.1 Chaufferie et vapeur
+
+**Validé**
+- La chaufferie produit la vapeur nécessaire aux procédés industriels.
+- L'installation initiale est une chaudière au gaz, dimensionnée pour permettre le fonctionnement de l'usine de base.
+- La capacité de la chaudière initiale peut être augmentée jusqu'à une limite.
+- Au-delà de cette limite, le joueur doit investir dans une seconde chaudière.
+- Une évolution ultérieure vers une chaufferie biomasse est prévue.
+
+**Filière biomasse — validée dans son principe**
+- Achat de combustible biomasse.
+- Stockage du combustible sur le site.
+- Approvisionnement de la chaudière.
+- Investissement initial plus important que la solution de départ.
+- Coût de combustible et coût d'exploitation potentiellement plus avantageux.
+
+**Ouvert**
+- Type précis de combustible biomasse.
+- Capacités, rendements, coûts, besoins de stockage et modalités de cohabitation entre chaudières.
+- Possibilité et intérêt de conserver des chaudières gaz en complément de la biomasse.
+
+### 8.2 Station électrique
+
+**Validé**
+- L'usine possède une production électrique sur son propre site.
+- L'alimentation électrique n'est pas simplement un achat d'électricité au réseau public.
+- La première solution envisagée est une production au gaz.
+- Des évolutions avancées pourront prendre la forme d'une centrale nucléaire ou d'une centrale hydroélectrique.
+- La solution hydroélectrique suppose la présence d'un cours d'eau à proximité du site et des aménagements adaptés.
+
+**Ouvert**
+- Statut exact des solutions nucléaire et hydroélectrique : alternatives de progression, choix de scénario ou possibilités cumulables.
+- Capacités, coûts, rendements, contraintes et conditions de déblocage.
+- Possibilité d'augmenter la capacité de la première installation au gaz et limites de cette évolution.
+- Éventuelle connexion au réseau électrique comme secours ou complément.
+
+### 8.3 Approvisionnement en eau
+
+**Validé**
+- L'usine est alimentée par le réseau d'eau de ville.
+- La consommation d'eau donne lieu à une facture.
+- Aucun forage ou captage autonome n'est prévu dans le principe actuel.
+
+**Ouvert**
+- Tarif, règles de facturation, volumes consommés et éventuelles limites de débit.
+
+### 8.4 Station d'épuration (STEP)
+
+**Validé**
+- Une station d'épuration traite les eaux usées issues de l'activité de l'usine.
+- La capacité de traitement est limitée et peut être augmentée par investissement.
+- Une capacité de traitement insuffisante doit constituer une contrainte pour l'exploitation.
+
+**Ouvert**
+- Capacité initiale, coûts, consommations et modalités précises des conséquences d'une saturation.
+- Niveau de détail du traitement et éventuelle réutilisation de l'eau traitée.
+
+### 8.5 Laboratoire
+
+**Validé**
+- Le laboratoire assure le contrôle de la qualité des betteraves, des produits intermédiaires et du sucre fini.
+- Son fonctionnement doit rester simple et évolutif.
+- Il peut influencer la qualité détectée et le suivi de la production.
+- La qualité commerciale du sucre peut avoir un effet sur les contrats et les prix de vente.
+
+**Ouvert**
+- Capacité d'analyse, fréquence des contrôles, améliorations et conséquences exactes d'un contrôle insuffisant.
+- Niveau de détail des analyses et indicateurs présentés au joueur.
+
+### 8.6 Maintenance
+
+**Validé**
+- La maintenance est assurée par une équipe centralisée de techniciens.
+- Un effectif plus important améliore la capacité d'intervention et peut réduire les délais de réparation.
+- Le système V1 ne repose pas sur des compétences détaillées ou une affectation individuelle des techniciens à chaque atelier.
+- La maintenance préventive et la vétusté influencent le risque de panne.
+- Une part limitée d'aléatoire demeure : une panne reste possible sur un équipement récent et bien entretenu.
+
+**Ouvert**
+- Présentation et fonctionnement détaillé du bâtiment de maintenance.
+- Coûts, effectifs, calendrier de maintenance préventive et niveaux d'amélioration.
+
+---
+
+## 9. Stockages et expédition
+
+### 9.1 Stockages retenus
+
+**Validé**
+
+Les stockages suivants sont distincts :
+
+1. **Aire extérieure à betteraves** : réserve de matière première avant transformation.
+2. **Silos à pulpes humides** : stockage des pulpes issues de la diffusion avant déshydratation ou évacuation.
+3. **Silos à sucre vrac** : stockage du sucre cristallisé après séchage et refroidissement. Le sucre vrac peut être vendu directement.
+4. **Stockage du sucre en morceaux** : installation dédiée, disponible après investissement dans l'atelier de fabrication correspondant.
+5. **Silos à pellets** : stockage du produit fini issu de la déshydratation, disponible après déblocage de cette filière.
+
+### 9.2 Règles de stockage
+
+**Principe validé — paramètres à définir**
+- Chaque stockage possède une capacité maximale.
+- Des capacités supplémentaires peuvent être construites ou ajoutées par investissement.
+- La saturation d'un stockage peut bloquer ou ralentir l'installation située en amont.
+- Les pulpes humides ont une durée maximale de conservation.
+- Les produits finis peuvent être conservés avant leur vente ou leur expédition.
+
+**Ouvert**
+- Organisation détaillée des zones de chargement et d'expédition.
+- Moyens de transport des produits finis.
+- Gestion des expéditions, des délais et de la capacité de chargement.
+- Éventuelle durée de conservation des autres produits stockés.
+
+---
+
+## 10. Économie et commercialisation
+
+### 10.1 Produits commercialisés
+
+**Validé**
+- Le sucre cristallisé en vrac est le produit commercial principal dès le démarrage.
+- Il peut être vendu directement depuis les silos à sucre vrac.
+- Le sucre en morceaux devient un produit commercial après investissement dans son atelier dédié.
+- Les pellets issus des pulpes sont un véritable produit commercial, avec des recettes de vente.
+
+**Ouvert**
+- Valorisation commerciale de la mélasse et des écumes.
+- Prix, marges, demande et volumes de vente des différents produits.
+
+### 10.2 Contrats clients
+
+**Validé**
+- Les ventes de sucre reposent notamment sur des contrats clients.
+- Les contrats peuvent différer par leurs volumes, leurs tarifs et leurs délais.
+- Les recettes commerciales contribuent à financer les dépenses et les investissements.
+- La gestion du marché reste simplifiée : pas de simulation concurrentielle complexe entre sucreries.
+
+**Ouvert**
+- Vente au comptant ou au marché en complément des contrats.
+- Règles de livraison, pénalités, qualité contractuelle et renouvellement des contrats.
+- Modèle commercial applicable aux pellets et au sucre en morceaux.
+
+### 10.3 Dépenses et trésorerie
+
+**Principe validé — paramètres à définir**
+
+Les postes de dépenses identifiés comprennent :
+- achats de betteraves et combustible ;
+- eau, énergie, consommables et ressources industrielles ;
+- salaires ;
+- maintenance et réparations ;
+- évacuation des pulpes avant déshydratation ;
+- construction, agrandissement et modernisation des installations.
+
+Les recettes, dépenses, marges et investissements doivent être suivis dans une gestion économique lisible.
+
+**Ouvert**
+- Modèle de trésorerie détaillé, prix, coûts unitaires, financement, fiscalité éventuelle et règles de faillite.
+
+---
+
+## 11. Personnel, organisation et supervision
+
+### 11.1 Personnel
+
+**Validé**
+- Le personnel permanent est présent et rémunéré toute l'année, y compris pendant l'intercampagne.
+- Les ateliers de production ont un effectif minimum nécessaire à leur fonctionnement.
+- Un sous-effectif peut réduire la capacité ou arrêter un atelier.
+- Les responsables d'atelier sont prévus et peuvent améliorer la productivité, l'organisation, la qualité d'exécution ou les temps d'arrêt.
+- La gestion individuelle approfondie des salariés n'est pas prévue pour la V1.
+- Les techniciens de maintenance forment une équipe centralisée.
+
+**Ouvert**
+- Effectifs exacts, rémunérations, coûts, effets chiffrés des responsables et règles d'embauche.
+
+### 11.2 Supervision
+
+**Validé**
+Le joueur dispose d'une supervision centralisée avec des onglets secondaires, couvrant notamment :
+- la vue générale de l'usine ;
+- la production : capacité théorique et réelle, utilisation, goulets, consommations et stocks intermédiaires ;
+- la maintenance et les alarmes : pannes, interventions, techniciens disponibles et alertes préventives ;
+- la gestion financière et le personnel.
+
+Des indicateurs visuels simples peuvent signaler l'état des installations :
+- vert : fonctionnement normal ;
+- orange : fonctionnement dégradé ;
+- rouge : panne ou arrêt ;
+- bleu : travaux.
+
+Un indicateur synthétique de l'état général de l'usine a été envisagé.
+
+**Ouvert**
+- Liste définitive des indicateurs, écrans, alertes, filtres et interactions.
+
+---
+
+## 12. Incidents et mini-jeux
+
+### 12.1 Pannes
+
+**Validé**
+- Les pannes sont influencées par la vétusté et le manque de maintenance préventive.
+- Une part limitée d'aléatoire subsiste.
+- La réparation est assurée par l'équipe centralisée de techniciens.
+- La taille de cette équipe influence les délais d'intervention.
+
+### 12.2 Mini-jeux prioritaires
+
+**Validé**
+Deux mini-jeux sont prioritaires pour la V1 :
+
+1. **Dépannage hydraulique** : intervention sur un schéma simplifié de type P&ID, avec manœuvre de vannes et utilisation éventuelle d'une ligne de secours pour rétablir un flux.
+2. **Gestion des flux** : intervention sur les convoyeurs et les circuits de circulation des matières.
+
+Les mini-jeux sont déclenchés par certains incidents pendant la campagne. Une réussite réduit le temps d'arrêt ; un échec fait perdre du temps sans nécessairement aggraver la situation.
+
+**Ouvert**
+- Règles détaillées, fréquence, difficulté, durée et interface de chaque mini-jeu.
+- Autres mini-jeux possibles à une date ultérieure : diagnostic électrique, réglages ou intervention mécanique.
+
+---
+
+## 13. Orientation technique
+
+**Hypothèses de travail, non validées**
+- Moteur envisagé : Godot 4.
+- Langage à choisir : GDScript ou C#.
+- Développement assisté par Claude Code dans VS Code.
+- Génération d'un programme Windows autonome.
+
+Aucune architecture technique définitive n'est arrêtée à ce stade.
+
+---
+
+## 14. Éléments explicitement hors périmètre ou non retenus à ce stade
+
+**Validé pour la V1**
+- Pas de multijoueur.
+- Pas de version mobile ou console au démarrage.
+- Pas de plusieurs industries jouables simultanément.
+- Pas de simulation détaillée de chaque machine ou composant.
+- Pas de placement totalement libre des bâtiments.
+- Pas de gestion individuelle approfondie des salariés.
+- Pas de simulation concurrentielle complexe entre sucreries.
+- Pas de pesage individuel des camions de betteraves.
+- Pas de nécessité de vendre le sucre en morceaux pour commercialiser le sucre de base.
+
+Ces exclusions pourront être réexaminées dans une évolution ultérieure, mais ne doivent pas être réintroduites implicitement dans la conception actuelle.
+
+---
+
+## 15. Points restant à traiter pendant la phase de conception
+
+La liste suivante constitue le suivi des principaux sujets ouverts. Elle ne constitue pas encore un cahier des charges.
+
+### Procédé et dimensionnement
+- Définir les capacités et cadences cohérentes des neuf ateliers.
+- Définir les rendements et bilans matière simplifiés.
+- Définir les stocks intermédiaires et les règles de saturation.
+- Définir les besoins en vapeur, électricité, eau et consommables.
+- Vérifier les cohérences entre ateliers et infrastructures.
+
+### Approvisionnements et stockages
+- Définir les volumes unitaires des camions et la capacité initiale de l'aire à betteraves.
+- Définir les règles de livraison lorsque le stockage est plein.
+- Définir les capacités de stockage et les règles de conservation.
+- Définir la durée de conservation des pulpes humides.
+
+### Énergie et utilités
+- Dimensionner la chaudière initiale et ses extensions.
+- Définir la transition vers la biomasse et ses besoins logistiques.
+- Définir les scénarios d'évolution de la production électrique.
+- Dimensionner l'eau et la STEP.
+
+### Produits et économie
+- Définir les conditions de déblocage du sucre en morceaux et des pellets.
+- Définir les capacités et coûts des ateliers de diversification.
+- Définir les contrats d'approvisionnement et les contrats clients.
+- Définir les coûts, prix, salaires, charges et recettes.
+
+### Organisation et calendrier
+- Définir les effectifs nécessaires.
+- Définir le calendrier des campagnes et de l'intercampagne.
+- Définir l'échelle de temps et les vitesses de jeu.
+- Définir les règles de maintenance, d'incident et les mini-jeux.
+
+### Conception technique et visuelle
+- Confirmer le moteur et le langage.
+- Définir l'architecture technique après stabilisation de la conception fonctionnelle.
+- Définir l'interface, la direction artistique et le pipeline de ressources.
+
+---
+
+## 16. Arbitrages et corrections de formulations antérieures
+
+Cette section conserve les évolutions importantes pour éviter qu'une ancienne formulation soit réintroduite par erreur.
+
+| Sujet | Ancienne formulation ou proposition | Décision de référence |
+|---|---|---|
+| Réception des betteraves | Réception avec pesage et suivi du poids de chaque livraison | Les camions ont une capacité standardisée ; pas de pesage individuel ni de pont-bascule nécessaire au gameplay |
+| Atelier final de la chaîne de base | Séchage, refroidissement et conditionnement en sacs | Séchage et refroidissement ; le sucre vrac est stocké en silo et vendu directement |
+| Sucre en morceaux | Pouvait être interprété comme une activité disponible dès le départ | Atelier de fabrication à débloquer ultérieurement ; stockage dédié |
+| Pulpes | Coproduit dont la valorisation restait à définir | Stockage des pulpes humides, durée de conservation limitée, évacuation payante avant déshydratation, puis possibilité de produire et vendre des pellets |
+| Stockage du sucre | Stockage générique ou entrepôt de produits finis | Silos à sucre vrac pour le produit initial ; stockage distinct pour le sucre en morceaux |
+| Stockage des pellets | Stockage non défini | Silos à pellets distincts des silos à pulpes humides |
+| Approvisionnement en betteraves | Contrats d'approvisionnement uniquement envisagés | Contrats à livraisons automatiques et commandes ponctuelles supplémentaires |
+| Eau | Approvisionnement et traitement regroupés de manière générique | Eau de ville facturée ; STEP distincte et évolutive |
+| Production d'énergie | Achat au réseau électrique envisagé comme possibilité | Production électrique autonome sur site, initialement au gaz, avec évolutions avancées à définir |
+
+---
+
+## 17. Règle de clôture de la phase de conception
+
+La phase actuelle ne sera considérée comme terminée que lorsque :
+- les éléments fonctionnels nécessaires auront été recensés ;
+- les relations entre ateliers, ressources, stocks, personnel et économie auront été examinées ;
+- les décisions incompatibles auront été identifiées et arbitrées ;
+- les paramètres encore ouverts auront été clairement distingués des décisions validées ;
+- aucune proposition non acceptée ne sera présentée comme une règle acquise.
+
+À l'issue de cette phase seulement, le contenu stabilisé de ce référentiel servira de base à la rédaction du cahier des charges détaillé.
