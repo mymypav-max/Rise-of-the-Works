@@ -394,7 +394,9 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 - La proportion de terre présente dans les betteraves varie d'un camion à l'autre.
 - Pour la simulation V1, la terre est la seule impureté prise en compte : les pierres, feuilles, herbes et autres matières étrangères ne sont pas modélisées séparément.
 - Cette variabilité n'est pas liée à une simulation explicite de la météo ou des conditions de récolte.
-- Une aire extérieure permet de stocker les betteraves avant leur alimentation vers le lavage.
+- Une aire extérieure permet de stocker les betteraves brutes livrées, avec leur terre, avant leur alimentation vers le lavage. Le stockage de réception est donc exprimé en betteraves brutes et non en betteraves propres.
+- Le stockage des betteraves chez les agriculteurs, constitué avant et pendant la campagne, est distinct du stockage tampon situé dans l'enceinte de la sucrerie.
+- **Principe validé — capacité tampon initiale de l'usine :** la capacité de référence est équivalente à 8 heures de fonctionnement nominal. Elle doit être calculée en tonnes de betteraves brutes, terre comprise. Sa valeur exacte en tonnes reste à déterminer après fixation du taux moyen de terre des livraisons.
 
 ### 7.3 Stockage des betteraves et limites logistiques
 
@@ -407,7 +409,7 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 **Ouvert**
 - Gestion précise des camions lorsque l'aire est pleine : report, refus, attente ou autre mécanisme.
 - Éventuelles pénalités contractuelles en cas de livraison impossible.
-- Capacité unitaire d'un camion et capacité initiale de l'aire.
+- Capacité unitaire d'un camion et conversion en tonnes brutes de la capacité tampon de 8 heures, après fixation du taux moyen de terre des livraisons.
 - Règles de conservation des betteraves et éventuelle dégradation de leur qualité.
 
 ---
