@@ -161,7 +161,7 @@ Le jeu doit rester agréable et accessible. Il ne s'agit pas d'un simulateur d'i
 La chaîne de base comprend neuf ateliers de production distincts :
 
 1. **Réception des betteraves** : réception, déchargement et alimentation de la chaîne.
-2. **Lavage et déterrage** : retrait de la terre, des pierres et des matières indésirables.
+2. **Lavage et déterrage** : retrait de la terre présente sur les betteraves. Pour la simulation V1, la terre constitue la seule catégorie d'impuretés prise en compte.
 3. **Découpage** : transformation des betteraves en cossettes.
 4. **Diffusion** : extraction du sucre contenu dans les cossettes. Cette étape génère également des pulpes humides.
 5. **Épuration** : traitement du jus, notamment par chaulage, carbonatation et filtration.
@@ -273,6 +273,9 @@ Aucune valeur chiffrée de capacité, de rendement, de conversion ou de consomma
 - Le jeu n'a pas besoin de simuler le pesage individuel des camions.
 - Le pont-bascule et la pesée à réception ne sont donc pas nécessaires au gameplay retenu.
 - Les camions déchargent les betteraves dans les installations de réception.
+- La proportion de terre présente dans les betteraves varie d'un camion à l'autre.
+- Pour la simulation V1, la terre est la seule impureté prise en compte : les pierres, feuilles, herbes et autres matières étrangères ne sont pas modélisées séparément.
+- Cette variabilité n'est pas liée à une simulation explicite de la météo ou des conditions de récolte.
 - Une aire extérieure permet de stocker les betteraves avant leur alimentation vers le lavage.
 
 ### 7.3 Stockage des betteraves et limites logistiques
