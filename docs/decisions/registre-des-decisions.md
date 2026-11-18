@@ -239,6 +239,18 @@ Chaque atelier est représenté par un bâtiment distinct.
 - La matière sèche représente l'ensemble des constituants secs des pulpes, et non uniquement les fibres ; elle n'est pas décomposée davantage dans le bilan simplifié de la V1.
 - L'eau extraite au pressage reste un flux interne récupéré et recyclé dans le circuit de diffusion ; elle ne doit pas être comptabilisée comme une sortie supplémentaire de l'usine.
 
+**Décision validée — déshydratation des pulpes et production de pellets**
+- La filière de valorisation des pulpes commence avec les 210 kg de pulpes pressées produits par tonne de betteraves propres traitées, à 27 % de matière sèche.
+- La matière sèche est conservée pendant la déshydratation ; l'opération consiste à retirer de l'eau.
+- La teneur en matière sèche des pulpes déshydratées est fixée à 90 %, soit 10 % d'humidité résiduelle.
+- Sur la base de 1 000 kg de betteraves propres, les 56,7 kg de matière sèche donnent environ 63,0 kg de produit déshydraté à 90 % de matière sèche, contenant 6,3 kg d'eau.
+- La quantité d'eau retirée lors de la déshydratation est donc d'environ 147,0 kg par tonne de betteraves propres traitées.
+- Le produit déshydraté est ensuite compacté sous forme de pellets. Pour le bilan simplifié de la V1, la granulation n'entraîne ni ajout ni perte de matière : la masse de pellets produite reste fixée à environ 63,0 kg.
+- Aucun ajout de mélasse n'est modélisé dans la filière de base de la V1.
+- Les pellets sont transférés vers leurs silos dédiés, distincts des silos à pulpes humides.
+- Les valeurs de 90 % de matière sèche et de 63,0 kg de pellets sont des paramètres de gameplay cohérents avec les références industrielles consultées ; elles ne constituent pas une garantie de performance applicable à toute installation.
+- Les références énergétiques consultées conduisent à un ordre de grandeur indicatif d'environ 0,35 à 0,44 GJ d'énergie thermique par tonne de betteraves propres traitées pour cette quantité de matière sèche et d'eau évaporée. Cette estimation sert de repère documentaire ; la consommation énergétique retenue pour le gameplay reste à définir après étude globale des utilités de l'usine.
+
 **Références industrielles de travail — valeurs à confirmer**
 - Un bilan matière publié par BioBIGG à partir de données Nordic Sugar indique environ 1 150 kg de jus de diffusion et 213 kg de pulpes pressées à 27 % de matière sèche par tonne de betteraves propres.
 - Une thèse de doctorat de l'University College London (2025) indique une teneur usuelle du jus brut de 10 à 15 % de saccharose en masse et une pureté saccharosique de 85 à 90 % des matières solubles.
@@ -297,7 +309,7 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 - Plusieurs capacités de stockage pourront être proposées.
 - La qualité ou l'utilisabilité des pulpes doit se dégrader lorsque la durée de conservation est dépassée ; les modalités exactes restent à définir.
 - La saturation des silos doit contraindre la production ou imposer une solution d'évacuation.
-- L'atelier de déshydratation, ses besoins énergétiques, ses capacités et les coûts de traitement restent à définir.
+- Le principe de déshydratation à 90 % de matière sèche, la masse de référence de 63,0 kg de pellets et le retrait d'environ 147,0 kg d'eau par tonne de betteraves propres sont validés. Les capacités de l'atelier, sa consommation énergétique de gameplay et les coûts de traitement restent à définir.
 
 ### 6.2 Sucre en morceaux
 
