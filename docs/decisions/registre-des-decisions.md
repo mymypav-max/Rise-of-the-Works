@@ -386,6 +386,12 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 
 ### 7.2 Camions et réception
 
+**Décision validée — charge utile standard des camions**
+- Tous les camions de betteraves sont modélisés avec une charge utile standard de **27 tonnes de betteraves brutes par livraison**, terre comprise.
+- Sur la base du débit nominal de 350 tonnes brutes par heure, cela représente environ 13 livraisons chargées par heure, soit un intervalle moyen d'environ 4 minutes et 37 secondes entre deux arrivées.
+- À pleine cadence continue, le besoin théorique correspond à environ 311 livraisons chargées par jour ; la valeur de 312 livraisons par jour constitue un arrondi de planification.
+- Ce nombre représente les livraisons nécessaires, et non le nombre de camions distincts à posséder ou à mobiliser. La taille de la flotte dépendra notamment de la durée des rotations et de l'organisation logistique, qui restent à définir.
+
 **Décision validée — taux de terre de référence**
 - Le taux de terre de référence des betteraves livrées est fixé à **12 % du poids des betteraves propres après lavage**.
 - Ce taux est une convention de calcul du jeu et non une moyenne industrielle universelle.
