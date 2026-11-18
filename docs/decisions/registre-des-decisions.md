@@ -179,6 +179,19 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — organisation de la diffusion**
+- L'atelier de diffusion comprend également le pressage des pulpes en fin de diffusion.
+- Les pulpes qui sortent de l'atelier de diffusion pour être stockées sont donc des pulpes pressées, et non les pulpes fraîches directement à la sortie du diffuseur.
+- L'eau extraite lors du pressage est récupérée et réutilisée dans le circuit de diffusion ; le bilan devra distinguer les flux internes recyclés des flux sortants de l'atelier.
+
+**Références industrielles de travail — valeurs à confirmer**
+- Un bilan matière publié par BioBIGG à partir de données Nordic Sugar indique environ 1 150 kg de jus de diffusion et 213 kg de pulpes pressées à 27 % de matière sèche par tonne de betteraves propres.
+- Une thèse de doctorat de l'University College London (2025) indique une teneur usuelle du jus brut de 10 à 15 % de saccharose en masse et une pureté saccharosique de 85 à 90 % des matières solubles.
+- La valeur de 15 % doit être qualifiée sans ambiguïté : teneur massique en saccharose dans le jus, ou teneur totale en matières solubles (Brix / matière sèche soluble). Ces deux grandeurs ne sont pas équivalentes.
+- Ces références constituent des bases documentaires de travail et ne sont pas encore des paramètres chiffrés définitivement validés pour le jeu.
+
+
+
 **Principe validé — paramètres à définir**
 - Chaque atelier possède une capacité nominale exprimée dans une unité adaptée à la matière ou à l'opération qu'il traite.
 - Il n'est pas nécessaire d'imposer une unité de capacité unique à toute la chaîne.
