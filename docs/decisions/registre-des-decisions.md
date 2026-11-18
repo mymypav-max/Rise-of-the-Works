@@ -179,6 +179,12 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — capacité nominale initiale de la sucrerie**
+- La capacité nominale initiale de traitement est fixée à **7 500 tonnes de betteraves propres par jour**, c'est-à-dire après lavage et retrait de la terre.
+- Cette valeur constitue le débit théorique nominal de référence de l'usine, avant prise en compte des arrêts, de la maintenance, des indisponibilités, des éventuels goulets d'étranglement ou des contraintes d'approvisionnement.
+- Le tonnage de betteraves brutes réceptionnées sera nécessairement supérieur au tonnage de betteraves propres traitées. Il dépendra du taux de terre par camion, qui reste à définir.
+- Cette capacité journalière ne fixe pas à elle seule le nombre d'heures de fonctionnement par jour ni le taux de disponibilité de l'usine ; ces paramètres restent ouverts.
+
 **Décision validée — cristallisation et récupération du saccharose**
 - Pour le modèle simplifié de la V1, l'atelier de cristallisation représente plusieurs cycles successifs de cristallisation et de recyclage des sirops intermédiaires, sans simuler séparément chaque appareil ou chaque cycle.
 - La centrifugation constitue l'étape distincte de séparation finale des cristaux de sucre et de la mélasse.
@@ -503,7 +509,7 @@ Les stockages suivants sont distincts :
 - Chaque stockage possède une capacité maximale.
 - Des capacités supplémentaires peuvent être construites ou ajoutées par investissement.
 - La saturation d'un stockage peut bloquer ou ralentir l'installation située en amont.
-- Les pulpes humides sont ensilées en silos fermés et étanches ; la fermentation dure 30 jours et la durée maximale de conservation est fixée à 180 jours à compter de la mise en silo. La capacité nominale totale est dimensionnée sur 33 jours de production de pulpes pressées, répartis entre 30 jours de fermentation et 3 jours de réserve opérationnelle.
+- Les pulpes humides sont ensilées en silos fermés et étanches ; la fermentation dure 30 jours et la durée maximale de conservation est fixée à 180 jours à compter de la mise en silo. La capacité nominale totale est dimensionnée sur 33 jours de production de pulpes pressées, répartis entre 30 jours de fermentation et 3 jours de réserve opérationnelle. Avec la capacité initiale de 7 500 tonnes de betteraves propres par jour et une production de 0,21 tonne de pulpes pressées par tonne de betteraves propres, cette règle conduit à une capacité nominale totale de **51 975 tonnes de pulpes pressées** (7 500 × 0,21 × 33).
 - Les produits finis peuvent être conservés avant leur vente ou leur expédition.
 
 **Ouvert**
