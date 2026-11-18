@@ -115,6 +115,12 @@ Le jeu doit rester agréable et accessible. Il ne s'agit pas d'un simulateur d'i
 
 ### 3.2 Campagnes betteravières
 
+**Décision validée — durée de la campagne initiale**
+- La durée de référence d'une campagne betteravière est fixée à **120 jours calendaires**.
+- Cette durée constitue le paramètre de départ de la V1 pour le calendrier d'exploitation de la sucrerie.
+- Les 120 jours représentent une durée de campagne, et non 120 jours de fonctionnement garanti à pleine capacité : les arrêts, pannes, opérations de maintenance, indisponibilités et contraintes d'approvisionnement pourront réduire le tonnage réellement traité.
+- La durée des campagnes pourra évoluer selon les scénarios ou les choix de gestion ultérieurs, si cette possibilité est intégrée au gameplay.
+
 **Validé**
 - L'activité sucrière est organisée en campagnes saisonnières.
 - Une période d'intercampagne suit la campagne.
