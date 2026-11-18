@@ -386,6 +386,14 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 
 ### 7.2 Camions et réception
 
+**Décision validée — architecture simplifiée de réception**
+- La réception des betteraves repose sur **deux postes de déchargement**.
+- Chaque poste possède une capacité nominale de **200 tonnes de betteraves brutes par heure**, soit une capacité cumulée de 400 t/h.
+- Un **convoyeur principal commun**, d'une capacité nominale de 400 t/h, assure le transfert des betteraves depuis la réception vers le stockage extérieur ou l'étape suivante selon l'organisation du site.
+- Cette capacité offre une marge de 50 t/h par rapport au débit brut nominal de référence de 350 t/h.
+- Les deux postes sont représentés comme des installations fonctionnelles simplifiées. Le jeu ne simule pas individuellement les manœuvres des camions, les chauffeurs, les temps de pesée ni chaque équipement de convoyage.
+- Si un poste est indisponible, le poste restant peut continuer à réceptionner jusqu'à 200 t/h, sans garantir le maintien de la pleine cadence de l'usine.
+
 **Décision validée — charge utile standard des camions**
 - Tous les camions de betteraves sont modélisés avec une charge utile standard de **27 tonnes de betteraves brutes par livraison**, terre comprise.
 - Sur la base du débit nominal de 350 tonnes brutes par heure, cela représente environ 13 livraisons chargées par heure, soit un intervalle moyen d'environ 4 minutes et 37 secondes entre deux arrivées.
