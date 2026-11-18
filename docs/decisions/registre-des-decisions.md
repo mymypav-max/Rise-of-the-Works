@@ -179,6 +179,14 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — évaporation**
+- Le sirop en sortie d'évaporation est fixé à 70 % de matière sèche totale.
+- Le bilan de référence est établi sur 1 079,5 kg de jus épuré entrant, contenant 184,4 kg de matière sèche totale (17,08 %).
+- En supposant l'absence de perte de matière sèche pendant l'évaporation, la sortie est d'environ 263,4 kg de sirop à 70 % de matière sèche.
+- La quantité d'eau évaporée correspondante est d'environ 816,1 kg.
+- Le coefficient de référence est donc d'environ 0,756 kg d'eau évaporée par kg de jus épuré traité.
+- Ces valeurs sont rattachées à la quantité de jus épuré traitée ; elles ne doivent pas être présentées comme des valeurs unitaires directement rapportées à une tonne de betteraves, même si le lot de jus utilisé dans le bilan provient de notre base de calcul de 1 000 kg de betteraves propres.
+
 **Décision validée — épuration du jus**
 - Pour le bilan matière simplifié de la V1, l'épuration entraîne une perte de référence de 1 kg de saccharose par tonne de betteraves propres traitées.
 - Cette perte est considérée comme entraînée avec les boues d'épuration.
