@@ -185,7 +185,17 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Le rendement global de récupération du saccharose au cours de la cristallisation est fixé à 88 % du saccharose présent dans le jus épuré entrant dans cette étape.
 - Sur la base actuelle de 171,5 kg de saccharose, cela représente environ 150,9 kg de saccharose cristallisé et 20,6 kg de saccharose restant dans la mélasse finale.
 - Cette valeur est un paramètre de référence simplifié, choisi dans les ordres de grandeur industriels documentés ; elle ne représente pas une moyenne universelle.
-- La masse finale de sucre commercialisable sera déterminée ultérieurement en tenant compte de la pureté des cristaux, de la centrifugation, du séchage et du refroidissement.
+- La masse finale de sucre commercialisable sera déterminée ultérieurement en tenant compte de la pureté des cristaux, du séchage et du refroidissement.
+
+**Décision validée — centrifugation et séparation finale**
+- La centrifugation constitue une étape distincte qui sépare les cristaux de sucre de la liqueur mère issue de la cristallisation.
+- Le lavage des cristaux est intégré à cette étape ; les sirops récupérés sont recyclés vers le système de cristallisation.
+- Le rendement global de récupération du saccharose de 88 % validé pour la cristallisation couvre l'ensemble du système de cristallisation et de séparation. Aucune perte supplémentaire de saccharose n'est appliquée arbitrairement à la centrifugation.
+- L'humidité de référence du sucre en sortie de centrifugeuse est fixée à 1,23 %. Le sucre est ensuite dirigé vers l'atelier de séchage et de refroidissement.
+- Pour le bilan simplifié, les cristaux sont considérés comme du saccharose pur avant prise en compte de l'humidité : 150,9 kg de saccharose correspondent ainsi à environ 152,8 kg de sucre humide à 1,23 % d'humidité.
+- La mélasse finale contient les 20,6 kg de saccharose non récupérés sous forme de cristaux. En retenant une composition de référence de 77,6 % de matière sèche et 60,9 % de saccharose dans cette matière sèche, sa masse estimée est d'environ 43,6 kg.
+- Ces quantités sont rapportées à la base commune de 1 000 kg de betteraves propres traitées, et non à une tonne de betteraves brutes livrées ni à une tonne de jus.
+- La masse de mélasse est une estimation de bilan matière fondée sur la composition retenue ; elle constitue un paramètre simplifié de gameplay, et non une valeur universelle pour toutes les sucreries.
 
 **Décision validée — évaporation**
 - Le sirop en sortie d'évaporation est fixé à 70 % de matière sèche totale.
