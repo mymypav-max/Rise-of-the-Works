@@ -231,6 +231,14 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Les pulpes qui sortent de l'atelier de diffusion pour être stockées sont donc des pulpes pressées, et non les pulpes fraîches directement à la sortie du diffuseur.
 - L'eau extraite lors du pressage est récupérée et réutilisée dans le circuit de diffusion ; le bilan devra distinguer les flux internes recyclés des flux sortants de l'atelier.
 
+**Décision validée — quantité et composition des pulpes pressées**
+- Sur la base de 1 000 kg de betteraves propres traitées, la production de référence est fixée à 210 kg de pulpes pressées.
+- La matière sèche est fixée à 27 %, soit 56,7 kg de matière sèche et 153,3 kg d'eau.
+- Ces pulpes sont celles qui sortent du pressage intégré à l'atelier de diffusion et qui sont envoyées vers les silos dédiés.
+- La valeur de 210 kg est un arrondi de gameplay cohérent avec les références industrielles consultées, notamment un bilan BioBIGG/Nordic Sugar indiquant environ 213 kg à 27 % de matière sèche par tonne de betteraves propres.
+- La matière sèche représente l'ensemble des constituants secs des pulpes, et non uniquement les fibres ; elle n'est pas décomposée davantage dans le bilan simplifié de la V1.
+- L'eau extraite au pressage reste un flux interne récupéré et recyclé dans le circuit de diffusion ; elle ne doit pas être comptabilisée comme une sortie supplémentaire de l'usine.
+
 **Références industrielles de travail — valeurs à confirmer**
 - Un bilan matière publié par BioBIGG à partir de données Nordic Sugar indique environ 1 150 kg de jus de diffusion et 213 kg de pulpes pressées à 27 % de matière sèche par tonne de betteraves propres.
 - Une thèse de doctorat de l'University College London (2025) indique une teneur usuelle du jus brut de 10 à 15 % de saccharose en masse et une pureté saccharosique de 85 à 90 % des matières solubles.
@@ -263,7 +271,7 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Consommations de vapeur, d'électricité, d'eau et de consommables.
 - Valeurs industrielles de référence et adaptations nécessaires au gameplay.
 
-Aucune valeur chiffrée de capacité, de rendement, de conversion ou de consommation n'est validée à ce stade.
+Les valeurs chiffrées déjà validées sont celles explicitement indiquées dans les décisions ci-dessus. Les autres capacités, rendements, coefficients de conversion et consommations restent à définir.
 
 ---
 
