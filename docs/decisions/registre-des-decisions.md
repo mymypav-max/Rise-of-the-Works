@@ -115,6 +115,11 @@ Le jeu doit rester agréable et accessible. Il ne s'agit pas d'un simulateur d'i
 
 ### 3.2 Campagnes betteravières
 
+**Décision validée — fonctionnement continu pendant la campagne**
+- Pendant la campagne betteravière, l'usine est prévue pour fonctionner en continu, **24 heures sur 24 et 7 jours sur 7**.
+- La continuité de l'exploitation est assurée par des équipes qui se relaient en postes successifs. Le nombre d'équipes, la durée des postes et l'organisation précise des rotations restent à définir.
+- Les pannes, incidents, opérations de maintenance et contraintes d'approvisionnement peuvent entraîner des arrêts ou des réductions de cadence. Ils seront pris en compte dans la disponibilité réelle de l'usine.
+
 **Décision validée — durée de la campagne initiale**
 - La durée de référence d'une campagne betteravière est fixée à **120 jours calendaires**.
 - Cette durée constitue le paramètre de départ de la V1 pour le calendrier d'exploitation de la sucrerie.
