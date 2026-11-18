@@ -187,6 +187,7 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Les flux entre ateliers doivent être reliés par des coefficients de conversion et des bilans matière cohérents.
 - La production réelle dépend de la capacité disponible, des matières entrantes, des ressources, du personnel et de la disponibilité des ateliers en amont et en aval.
 - Les ateliers n'ont pas nécessairement les mêmes cadences.
+- Pour le bilan matière de la V1, le découpage des betteraves propres en cossettes est considéré sans perte de matière : la masse de cossettes produite est égale à la masse de betteraves propres entrante.
 - Les différences de capacité doivent créer des arbitrages et des goulets d'étranglement compréhensibles.
 - Les stocks intermédiaires absorbent temporairement les différences de cadence.
 - Une saturation ou un arrêt peut réduire le débit de toute la chaîne.
