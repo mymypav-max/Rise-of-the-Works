@@ -190,6 +190,13 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — capacité de l'atelier de lavage et déterrage**
+- L'atelier de lavage et déterrage comprend **deux laveurs fonctionnant en parallèle**.
+- Chaque laveur possède une capacité nominale de **200 tonnes de betteraves brutes par heure**, soit une capacité cumulée de 400 t/h.
+- Le débit brut nominal nécessaire à l'usine est de 350 t/h au taux de terre de référence de 12 %. La capacité installée des deux laveurs offre donc une marge de 50 t/h, soit environ 14,3 %.
+- Les deux laveurs sont considérés comme des équipements indépendants pour la disponibilité : si l'un est arrêté, l'autre peut continuer à fonctionner dans la limite de 200 t/h.
+- Le jeu ne simule pas individuellement les équipements internes des laveurs ni chaque étape technique du circuit de lavage.
+
 **Décision validée — capacité nominale initiale de la sucrerie**
 - La capacité nominale initiale de traitement est fixée à **7 500 tonnes de betteraves propres par jour**, c'est-à-dire après lavage et retrait de la terre.
 - Cette valeur constitue le débit théorique nominal de référence de l'usine, avant prise en compte des arrêts, de la maintenance, des indisponibilités, des éventuels goulets d'étranglement ou des contraintes d'approvisionnement.
