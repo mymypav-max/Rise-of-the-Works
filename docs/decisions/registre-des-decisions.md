@@ -197,6 +197,15 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Ces quantités sont rapportées à la base commune de 1 000 kg de betteraves propres traitées, et non à une tonne de betteraves brutes livrées ni à une tonne de jus.
 - La masse de mélasse est une estimation de bilan matière fondée sur la composition retenue ; elle constitue un paramètre simplifié de gameplay, et non une valeur universelle pour toutes les sucreries.
 
+**Décision validée — séchage et refroidissement**
+- Le sucre humide sortant de centrifugation entre dans l'atelier de séchage et de refroidissement avant son transfert vers les silos à sucre vrac.
+- L'humidité de référence à l'entrée de cet atelier est de 1,23 %.
+- L'humidité résiduelle cible du sucre fini est fixée à 0,04 %.
+- La température de référence du sucre en sortie de refroidissement est fixée à 30 °C.
+- Pour le bilan simplifié, les 150,9 kg de saccharose sont conservés pendant le séchage et le refroidissement ; seule l'eau est retirée.
+- Sur la base de 1 000 kg de betteraves propres traitées, l'entrée est d'environ 152,8 kg de sucre humide. La sortie est d'environ 150,96 kg de sucre fini à 0,04 % d'humidité, soit environ 1,82 kg d'eau retirée.
+- Ces valeurs sont des paramètres de référence du modèle de jeu et ne représentent pas une garantie de performance applicable à toute installation industrielle.
+
 **Décision validée — évaporation**
 - Le sirop en sortie d'évaporation est fixé à 70 % de matière sèche totale.
 - Le bilan de référence est établi sur 1 079,5 kg de jus épuré entrant, contenant 184,4 kg de matière sèche totale (17,08 %).
