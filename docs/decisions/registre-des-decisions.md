@@ -190,6 +190,13 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — capacité de l'atelier de découpage**
+- L'atelier de découpage comprend **deux coupe-betteraves fonctionnant en parallèle**.
+- Les deux équipements se partagent le débit nominal de 312,5 tonnes de betteraves propres par heure.
+- Leur capacité unitaire et la marge de capacité de l'atelier restent à documenter avant de fixer un dimensionnement chiffré.
+- Les deux équipements sont considérés comme indépendants pour la disponibilité : si l'un est arrêté, l'autre peut continuer à fonctionner, dans la limite de sa propre capacité.
+- Le bilan matière simplifié conserve une masse inchangée lors du découpage : 1 000 kg de betteraves propres donnent 1 000 kg de cossettes.
+
 **Décision validée — capacité de l'atelier de lavage et déterrage**
 - L'atelier de lavage et déterrage comprend **deux laveurs fonctionnant en parallèle**.
 - Chaque laveur possède une capacité nominale de **200 tonnes de betteraves brutes par heure**, soit une capacité cumulée de 400 t/h.
