@@ -295,8 +295,8 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 
 - La diffusion produit des pulpes humides.
 - Les pulpes humides sont stockées dans des silos dédiés avant leur traitement ou leur évacuation.
-- Une durée maximale de conservation doit être appliquée afin d'empêcher un stockage indéfini.
-- La durée d'un an a été proposée comme première hypothèse, mais n'est pas une valeur validée.
+- Une durée maximale de conservation est appliquée afin d'empêcher un stockage indéfini.
+- Les pulpes sont conservées par ensilage dans des silos fermés et étanches.
 - Avant le déblocage de la déshydratation, le joueur doit supporter un coût pour faire évacuer les pulpes.
 - Au cours de la progression, le joueur pourra investir dans un atelier de déshydratation, également appelé bâtiment de déshydratation.
 - Cet atelier transforme les pulpes humides en pellets.
@@ -304,10 +304,19 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 - Les pellets finis disposent de silos de stockage distincts des silos à pulpes humides.
 - La capacité de stockage des pulpes doit être cohérente avec le débit de production et la capacité de déshydratation.
 
+**Décision validée — conservation des pulpes humides par ensilage**
+- Les pulpes pressées sont stockées dans des silos fermés et étanches, selon un principe d'ensilage.
+- Une phase de fermentation de référence de 30 jours est nécessaire avant que les pulpes puissent être utilisées pour la déshydratation.
+- La durée maximale de conservation est fixée à 180 jours à compter de la mise en silo. Cette durée inclut donc la phase initiale de fermentation.
+- En fonctionnement normal, lorsque l'ensilage est correctement réalisé et que le silo reste étanche, aucune perte de matière sèche n'est modélisée dans le bilan matière simplifié de la V1.
+- Au-delà de 180 jours, les pulpes subissent une dégradation progressive de leur qualité et de leur utilisabilité. Elles finissent par devoir être évacuées ; le seuil et les modalités précises de cette dégradation restent à définir.
+- La durée de 180 jours est un paramètre de gameplay retenu pour la V1, et non une limite universelle de conservation applicable à toutes les installations industrielles.
+- Le joueur doit donc organiser les capacités de stockage et le débit de déshydratation afin d'éviter le dépassement de la durée de conservation.
+
 **Principe validé — paramètres à définir**
 - Les silos à pulpes humides sont des bâtiments indépendants et constructibles séparément.
 - Plusieurs capacités de stockage pourront être proposées.
-- La qualité ou l'utilisabilité des pulpes doit se dégrader lorsque la durée de conservation est dépassée ; les modalités exactes restent à définir.
+- En cas de dépassement de la durée maximale de conservation, la qualité et l'utilisabilité des pulpes se dégradent progressivement ; les modalités chiffrées de cette dégradation restent à définir.
 - La saturation des silos doit contraindre la production ou imposer une solution d'évacuation.
 - Le principe de déshydratation à 90 % de matière sèche, la masse de référence de 63,0 kg de pellets et le retrait d'environ 147,0 kg d'eau par tonne de betteraves propres sont validés. Les capacités de l'atelier, sa consommation énergétique de gameplay et les coûts de traitement restent à définir.
 
@@ -485,7 +494,7 @@ Les stockages suivants sont distincts :
 - Chaque stockage possède une capacité maximale.
 - Des capacités supplémentaires peuvent être construites ou ajoutées par investissement.
 - La saturation d'un stockage peut bloquer ou ralentir l'installation située en amont.
-- Les pulpes humides ont une durée maximale de conservation.
+- Les pulpes humides sont ensilées en silos fermés et étanches ; la fermentation dure 30 jours et la durée maximale de conservation est fixée à 180 jours à compter de la mise en silo.
 - Les produits finis peuvent être conservés avant leur vente ou leur expédition.
 
 **Ouvert**
