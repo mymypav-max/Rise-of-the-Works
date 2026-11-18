@@ -179,6 +179,14 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 ### 5.2 Capacités et flux
 
+**Décision validée — cristallisation et récupération du saccharose**
+- Pour le modèle simplifié de la V1, l'atelier de cristallisation représente plusieurs cycles successifs de cristallisation et de recyclage des sirops intermédiaires, sans simuler séparément chaque appareil ou chaque cycle.
+- La centrifugation constitue l'étape distincte de séparation finale des cristaux de sucre et de la mélasse.
+- Le rendement global de récupération du saccharose au cours de la cristallisation est fixé à 88 % du saccharose présent dans le jus épuré entrant dans cette étape.
+- Sur la base actuelle de 171,5 kg de saccharose, cela représente environ 150,9 kg de saccharose cristallisé et 20,6 kg de saccharose restant dans la mélasse finale.
+- Cette valeur est un paramètre de référence simplifié, choisi dans les ordres de grandeur industriels documentés ; elle ne représente pas une moyenne universelle.
+- La masse finale de sucre commercialisable sera déterminée ultérieurement en tenant compte de la pureté des cristaux, de la centrifugation, du séchage et du refroidissement.
+
 **Décision validée — évaporation**
 - Le sirop en sortie d'évaporation est fixé à 70 % de matière sèche totale.
 - Le bilan de référence est établi sur 1 079,5 kg de jus épuré entrant, contenant 184,4 kg de matière sèche totale (17,08 %).
