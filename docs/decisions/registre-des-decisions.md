@@ -180,7 +180,11 @@ Chaque atelier est représenté par un bâtiment distinct.
 ### 5.2 Capacités et flux
 
 **Principe validé — paramètres à définir**
-- Chaque atelier possède une capacité nominale.
+- Chaque atelier possède une capacité nominale exprimée dans une unité adaptée à la matière ou à l'opération qu'il traite.
+- Il n'est pas nécessaire d'imposer une unité de capacité unique à toute la chaîne.
+- La tonne de betteraves constitue une unité pertinente pour l'approvisionnement, la réception, le stockage des betteraves et les premières opérations qui les traitent.
+- Les ateliers suivants peuvent utiliser des unités différentes : masse de cossettes, volume de jus, quantité d'eau évaporée, masse de sirop ou de sucre, etc.
+- Les flux entre ateliers doivent être reliés par des coefficients de conversion et des bilans matière cohérents.
 - La production réelle dépend de la capacité disponible, des matières entrantes, des ressources, du personnel et de la disponibilité des ateliers en amont et en aval.
 - Les ateliers n'ont pas nécessairement les mêmes cadences.
 - Les différences de capacité doivent créer des arbitrages et des goulets d'étranglement compréhensibles.
@@ -190,12 +194,13 @@ Chaque atelier est représenté par un bâtiment distinct.
 
 **Ouvert**
 - Capacités nominales et cadences de chacun des neuf ateliers.
-- Rendements matière et taux de pertes.
+- Bilans matière et coefficients de conversion entre chaque étape : notamment betteraves vers cossettes, cossettes vers jus et pulpes humides, jus épuré, sirop, sucre cristallisé et produits finis.
+- Quantités de coproduits, teneurs en matière sèche et en sucre, humidité, taux d'extraction et pertes à chaque étape.
 - Volumes et règles de gestion des stocks intermédiaires.
 - Consommations de vapeur, d'électricité, d'eau et de consommables.
 - Valeurs industrielles de référence et adaptations nécessaires au gameplay.
 
-Aucune valeur chiffrée de capacité, de rendement ou de consommation n'est validée à ce stade.
+Aucune valeur chiffrée de capacité, de rendement, de conversion ou de consommation n'est validée à ce stade.
 
 ---
 
@@ -549,7 +554,7 @@ La liste suivante constitue le suivi des principaux sujets ouverts. Elle ne cons
 
 ### Procédé et dimensionnement
 - Définir les capacités et cadences cohérentes des neuf ateliers.
-- Définir les rendements et bilans matière simplifiés.
+- Établir les bilans matière et les coefficients de conversion entre chaque atelier, depuis la tonne de betteraves réceptionnée jusqu'aux produits finis et coproduits.
 - Définir les stocks intermédiaires et les règles de saturation.
 - Définir les besoins en vapeur, électricité, eau et consommables.
 - Vérifier les cohérences entre ateliers et infrastructures.
