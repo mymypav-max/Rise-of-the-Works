@@ -304,6 +304,15 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 - Les pellets finis disposent de silos de stockage distincts des silos à pulpes humides.
 - La capacité de stockage des pulpes doit être cohérente avec le débit de production et la capacité de déshydratation.
 
+**Décision validée — dimensionnement et organisation des silos à pulpes humides**
+- La capacité nominale totale des silos à pulpes humides est dimensionnée sur 33 jours de production de pulpes pressées.
+- Cette capacité comprend 30 jours de production correspondant à la phase de fermentation nécessaire avant utilisation, auxquels s'ajoutent 3 jours de réserve opérationnelle pour absorber les décalages entre production et déshydratation.
+- Le coefficient de production de pulpes pressées étant fixé à 0,21 tonne par tonne de betteraves propres traitées, la capacité nominale est calculée selon la formule : capacité (t de pulpes) = débit journalier de betteraves propres (t/j) × 0,21 × 33.
+- La capacité exacte en tonnes sera déterminée lorsque le débit nominal de betteraves de l'usine de départ sera validé.
+- Le stockage est organisé en plusieurs cellules indépendantes afin de permettre le remplissage, la fermeture, la fermentation et le soutirage de lots distincts.
+- Les lots sont gérés selon le principe FIFO (premier entré, premier sorti), en tenant compte de leur date de mise en silo et de leur durée de conservation.
+- La capacité de 33 jours constitue une règle de dimensionnement du gameplay V1 ; elle ne doit pas être interprétée comme une norme universelle de conception industrielle.
+
 **Décision validée — conservation des pulpes humides par ensilage**
 - Les pulpes pressées sont stockées dans des silos fermés et étanches, selon un principe d'ensilage.
 - Une phase de fermentation de référence de 30 jours est nécessaire avant que les pulpes puissent être utilisées pour la déshydratation.
@@ -494,7 +503,7 @@ Les stockages suivants sont distincts :
 - Chaque stockage possède une capacité maximale.
 - Des capacités supplémentaires peuvent être construites ou ajoutées par investissement.
 - La saturation d'un stockage peut bloquer ou ralentir l'installation située en amont.
-- Les pulpes humides sont ensilées en silos fermés et étanches ; la fermentation dure 30 jours et la durée maximale de conservation est fixée à 180 jours à compter de la mise en silo.
+- Les pulpes humides sont ensilées en silos fermés et étanches ; la fermentation dure 30 jours et la durée maximale de conservation est fixée à 180 jours à compter de la mise en silo. La capacité nominale totale est dimensionnée sur 33 jours de production de pulpes pressées, répartis entre 30 jours de fermentation et 3 jours de réserve opérationnelle.
 - Les produits finis peuvent être conservés avant leur vente ou leur expédition.
 
 **Ouvert**
