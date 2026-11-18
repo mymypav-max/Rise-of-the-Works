@@ -386,6 +386,14 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 
 ### 7.2 Camions et réception
 
+**Décision validée — taux de terre de référence**
+- Le taux de terre de référence des betteraves livrées est fixé à **12 % du poids des betteraves propres après lavage**.
+- Ce taux est une convention de calcul du jeu et non une moyenne industrielle universelle.
+- Le taux réel varie d'un camion à l'autre. Pour la simulation V1, cette variabilité est représentée dans une plage de 7 à 20 %, sans simulation explicite de la météo ou des conditions de récolte.
+- Le taux de terre est calculé par rapport à la masse de betteraves propres : 1 000 kg de betteraves propres correspondent donc à 1 120 kg de betteraves brutes livrées au taux de référence de 12 %.
+- Pour la capacité nominale de 7 500 tonnes de betteraves propres par jour, le débit brut de référence est de 8 400 tonnes par jour, soit 350 tonnes par heure en fonctionnement nominal continu.
+- La réserve tampon de 8 heures représente donc **2 800 tonnes de betteraves brutes**, terre comprise, au taux de référence de 12 %.
+
 **Validé**
 - Tous les camions sont considérés comme ayant une capacité de chargement identique.
 - Le jeu n'a pas besoin de simuler le pesage individuel des camions.
