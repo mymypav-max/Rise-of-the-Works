@@ -187,8 +187,10 @@ Chaque atelier est représenté par un bâtiment distinct.
 **Références industrielles de travail — valeurs à confirmer**
 - Un bilan matière publié par BioBIGG à partir de données Nordic Sugar indique environ 1 150 kg de jus de diffusion et 213 kg de pulpes pressées à 27 % de matière sèche par tonne de betteraves propres.
 - Une thèse de doctorat de l'University College London (2025) indique une teneur usuelle du jus brut de 10 à 15 % de saccharose en masse et une pureté saccharosique de 85 à 90 % des matières solubles.
-- La valeur de 15 % doit être qualifiée sans ambiguïté : teneur massique en saccharose dans le jus, ou teneur totale en matières solubles (Brix / matière sèche soluble). Ces deux grandeurs ne sont pas équivalentes.
-- Ces références constituent des bases documentaires de travail et ne sont pas encore des paramètres chiffrés définitivement validés pour le jeu.
+- **Décision validée pour le modèle de jeu :** le jus brut de diffusion est simplifié à 15 % de saccharose en masse. Cette valeur désigne bien la masse de saccharose rapportée à la masse totale du jus, et non le Brix ou la teneur totale en matières solubles.
+- Sur une base de 1 150 kg de jus brut, cette convention représente 172,5 kg de saccharose.
+- Le jeu vise une représentation industrielle crédible et cohérente, sans chercher une simulation physico-chimique hyper précise. Les valeurs de référence seront donc simplifiées lorsque nécessaire, tout en conservant des bilans matière cohérents et des ordres de grandeur réalistes.
+- Les valeurs industrielles documentées restent des références de travail ; les paramètres du jeu pourront être arrondis ou simplifiés pour le gameplay, sans être présentés comme des mesures exactes d'une usine réelle.
 
 
 
