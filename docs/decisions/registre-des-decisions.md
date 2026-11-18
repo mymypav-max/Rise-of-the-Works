@@ -422,6 +422,12 @@ Les valeurs chiffrées déjà validées sont celles explicitement indiquées dan
 
 ### 7.3 Stockage des betteraves et limites logistiques
 
+**Décision validée — capacité initiale du stockage extérieur**
+- Le stockage extérieur de la sucrerie est dimensionné initialement pour recevoir l'équivalent de **24 heures de production nominale**.
+- Sur la base de 350 tonnes de betteraves brutes par heure, au taux de terre de référence de 12 %, cette capacité représente **8 400 tonnes de betteraves brutes**, terre comprise.
+- Ce stockage extérieur est distinct du stock tampon de réception de 8 heures situé dans l'enceinte de l'usine. Les deux capacités ne doivent pas être confondues.
+- La capacité pourra être augmentée ultérieurement par investissement.
+
 **Principe validé — paramètres à définir**
 - L'aire de stockage possède une capacité maximale.
 - Sa capacité peut être augmentée par investissement.
