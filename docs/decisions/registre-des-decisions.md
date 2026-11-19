@@ -34,6 +34,7 @@
 | Version | Date | Évolution |
 |---|---|---|
 | 0.1 | 18/11/2026 | Consolidation des décisions issues de la phase initiale de conception et des échanges sur la sucrerie betteravière, ses infrastructures, ses stockages et son approvisionnement. |
+| 0.2 | 19/11/2026 | Validation globale de l'architecture industrielle initiale des neuf ateliers et de leurs capacités nominales. |
 
 ---
 
@@ -193,7 +194,7 @@ Chaque atelier est représenté par un bâtiment distinct.
 **Décision validée — capacité de l'atelier de découpage**
 - L'atelier de découpage comprend **deux coupe-betteraves fonctionnant en parallèle**.
 - Les deux équipements se partagent le débit nominal de 312,5 tonnes de betteraves propres par heure.
-- Leur capacité unitaire et la marge de capacité de l'atelier restent à documenter avant de fixer un dimensionnement chiffré.
+- La capacité nominale retenue est de **175 t/h par coupe-racines**, soit 350 t/h au total pour un besoin nominal de 312,5 t/h de betteraves propres. La marge de capacité installée est d'environ 12 %.
 - Les deux équipements sont considérés comme indépendants pour la disponibilité : si l'un est arrêté, l'autre peut continuer à fonctionner, dans la limite de sa propre capacité.
 - Le bilan matière simplifié conserve une masse inchangée lors du découpage : 1 000 kg de betteraves propres donnent 1 000 kg de cossettes.
 
@@ -307,7 +308,7 @@ Chaque atelier est représenté par un bâtiment distinct.
 - Les investissements doivent être évalués à l'échelle de la chaîne complète.
 
 **Ouvert**
-- Capacités nominales et cadences de chacun des neuf ateliers.
+- Les capacités nominales globales des neuf ateliers sont désormais fixées par la décision d'architecture industrielle ci-dessous. Les réglages détaillés, les performances en régime dégradé et les éventuelles extensions restent à définir.
 - Bilans matière et coefficients de conversion entre chaque étape : notamment betteraves vers cossettes, cossettes vers jus et pulpes humides, jus épuré, sirop, sucre cristallisé et produits finis.
 - Quantités de coproduits, teneurs en matière sèche et en sucre, humidité, taux d'extraction et pertes à chaque étape.
 - Volumes et règles de gestion des stocks intermédiaires.
@@ -317,6 +318,74 @@ Chaque atelier est représenté par un bâtiment distinct.
 Les valeurs chiffrées déjà validées sont celles explicitement indiquées dans les décisions ci-dessus. Les autres capacités, rendements, coefficients de conversion et consommations restent à définir.
 
 ---
+
+
+**Décision validée — architecture industrielle globale initiale des neuf ateliers (19/11/2026)**
+
+L'architecture de référence de la sucrerie initiale est validée dans sa globalité pour une capacité nominale de **7 500 tonnes de betteraves propres par jour**, soit 312,5 t/h en fonctionnement continu. Avec le taux de tare de référence de 12 % appliqué à la masse de betteraves propres, le débit d'entrée correspondant est de 350 t/h de betteraves brutes.
+
+Cette architecture constitue une **simplification de conception destinée au gameplay**. Elle vise une cohérence industrielle et économique entre les ateliers, sans reproduire à l'identique une usine existante ni inventorier ses équipements. Les nombres et capacités ci-dessous sont des paramètres de dimensionnement du jeu ; ils ne sont pas des données constructeur et ne doivent pas être présentés comme l'inventaire réel de la sucrerie d'Attin. Les références d'Attin, Boiry-Sainte-Rictrude et Connantre ont servi à éclairer l'organisation des procédés et les ordres de grandeur, mais les capacités unitaires retenues sont des choix de conception adaptés au projet.
+
+**Atelier 1 — Réception des betteraves**
+- Deux postes de déchargement indépendants de **200 t/h brut chacun**, soit 400 t/h au total.
+- Un convoyeur principal d'alimentation de **400 t/h brut**.
+- Le débit brut nominal de référence est de 350 t/h ; la marge installée est d'environ 14 %.
+- La configuration et les capacités des postes et du convoyeur reprennent les décisions précédemment validées.
+
+**Atelier 2 — Lavage et déterrage**
+- Deux laveurs indépendants fonctionnant en parallèle, de **200 t/h brut chacun**, soit 400 t/h au total.
+- Le débit brut nominal de référence est de 350 t/h ; la marge installée est d'environ 14 %.
+- Le jeu ne détaille pas individuellement les équipements internes des lignes de lavage.
+
+**Atelier 3 — Découpage**
+- Deux coupe-racines fonctionnant en parallèle, de **175 t/h de betteraves propres chacun**, soit 350 t/h au total.
+- Pour un besoin nominal de 312,5 t/h, la marge installée est d'environ 12 %.
+- Le découpage est considéré sans perte de masse dans le bilan matière simplifié.
+
+**Atelier 4 — Diffusion et pressage des pulpes**
+- Un malaxeur en amont et **un diffuseur à contre-courant**, dimensionné pour 350 t/h de betteraves propres.
+- Deux presses à pulpes indépendantes de **40 t/h de pulpes pressées chacune**, soit 80 t/h au total.
+- La production nominale de pulpes pressées est d'environ 65,6 t/h sur la base de 210 kg par tonne de betteraves propres ; la capacité installée des presses offre environ 22 % de marge.
+- Le pressage est intégré à l'atelier de diffusion. L'eau extraite reste un flux interne récupéré et recyclé dans le circuit de diffusion.
+
+**Atelier 5 — Épuration du jus**
+- Deux lignes de traitement parallèles de **200 t/h de jus chacune**, soit 400 t/h au total.
+- Le débit de jus épuré à traiter est estimé à environ 337 t/h au régime nominal ; la marge installée est d'environ 19 %.
+- Chaque ligne représente de manière simplifiée les opérations de chaulage, carbonatation et filtration. Le procédé conserve deux carbonatations successives dans sa représentation fonctionnelle ; le jeu ne cherche pas à dénombrer chaque cuve, filtre ou équipement auxiliaire.
+
+**Atelier 6 — Évaporation**
+- Un seul train d'évaporation multi-effets, comprenant un pré-évaporateur et quatre effets tubulaires.
+- Capacité nominale du train : **280 t/h d'eau évaporée**.
+- Le besoin nominal issu du bilan matière est d'environ 255 t/h d'eau évaporée ; la marge installée est d'environ 10 %.
+- Les effets sont des étapes successives d'un même train de procédé, et non cinq ateliers ou bâtiments indépendants.
+
+**Atelier 7 — Cristallisation**
+- **Trois chaudières à cuire sous vide** dans un même atelier.
+- Les appareils fonctionnent par cycles décalés et représentent de manière agrégée les opérations de cuisson, d'ensemencement, de croissance cristalline et les recyclages de sirops.
+- Le modèle ne simule pas individuellement chaque jet ou chaque cycle de cristallisation. La récupération globale de saccharose déjà validée à 88 % reste applicable à l'ensemble du système de cristallisation et de séparation.
+- Aucune capacité horaire unitaire indépendante n'est fixée pour les chaudières à ce stade ; le débit de l'atelier est géré par le cycle global de production.
+
+**Atelier 8 — Centrifugation**
+- **Quatre centrifugeuses** de capacité nominale simplifiée de **16 t/h de sucre humide chacune**, soit 64 t/h au total.
+- Le débit nominal estimé en sortie de cristallisation est d'environ 47,8 t/h de sucre humide ; la marge installée est d'environ 34 %.
+- Le lavage des cristaux est intégré à l'atelier. Les sirops récupérés sont recyclés vers la cristallisation.
+- Aucune perte supplémentaire arbitraire de saccharose n'est ajoutée à cette étape : le rendement global de récupération de 88 % couvre déjà le système de cristallisation et de séparation.
+
+**Atelier 9 — Séchage et refroidissement**
+- Deux lignes intégrées sécheur-refroidisseur de **30 t/h de sucre humide chacune**, soit 60 t/h au total.
+- Le débit nominal estimé en entrée est d'environ 47,8 t/h ; la marge installée est d'environ 26 %.
+- Les paramètres matière déjà validés restent inchangés : humidité de 1,23 % en entrée, humidité finale de 0,04 % et température de sortie de 30 °C.
+
+**Principes d'exploitation et de gameplay associés**
+- Les équipements en parallèle sont considérés comme indépendants pour la disponibilité ; l'arrêt d'un équipement réduit la capacité disponible sans nécessairement arrêter tout l'atelier.
+- Les ateliers à ligne unique, notamment le diffuseur et le train d'évaporation, constituent des points de vulnérabilité : leur indisponibilité peut interrompre ou limiter fortement la production en aval.
+- La capacité nominale installée n'est pas assimilée à la production réelle garantie. Les pannes, maintenances, contraintes de personnel, ressources, approvisionnements, stocks intermédiaires et goulets d'étranglement déterminent le débit effectivement obtenu.
+- Il n'est pas recherché une redondance totale de tous les ateliers. Les marges et redondances sont des arbitrages de gameplay et d'investissement.
+- Les capacités des ateliers sont exprimées dans l'unité adaptée au flux traité ; elles ne doivent pas être comparées directement sans tenir compte des coefficients de conversion du bilan matière.
+
+**Équipements auxiliaires hors des neuf ateliers**
+- Les chaudières de la chaufferie, le turboalternateur, les installations de traitement des eaux, le laboratoire, la maintenance centralisée et les stockages restent des infrastructures annexes distinctes des neuf ateliers de transformation.
+- La déshydratation et la granulation des pulpes restent une filière d'extension ultérieure et ne sont pas intégrées à l'architecture initiale des neuf ateliers.
 
 ## 6. Coproduits et extensions industrielles
 
